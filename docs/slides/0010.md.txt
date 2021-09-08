@@ -1,0 +1,80 @@
+
+-----
+
+<h1 style={{fontSize:'25vh', color: 'orange'}}>Thank You</h1>
+
+<h1 className="borderline">ø</h1>
+
+
+-----
+
+<Box sx={{marginTop: '10vh'}}>
+<center>
+<h1 style={{color:'orange', fontSize: '22vh'}}>ø</h1>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<h1 style={{fontSize:'20vh'}}>  → </h1>
+
+
+</center>
+</Box>
+
+-----
+
+
+
+<Box sx={{marginTop: '10vh'}}>
+<center>
+
+<h1 style={{fontSize: '11vh', color:'orange'}}>links</h1>
+
+<br/>
+
+<br/>
+
+# [this talk with all examples](https://wentout.github.io/MoscowJS_50/)
+
+<br/>
+
+# used library : [Type ø Matica](https://www.npmjs.com/package/typeomatica)
+
+<br/>
+<br/>
+
+# project : [Mnemonica](https://www.npmjs.com/package/mnemonica)
+
+<br/>
+
+
+</center>
+</Box>
+
+-----
+
+
+-----
+
+
+-----
+
+<Box sx={{marginTop: '10vh'}}>
+<center>
+<h1 style={{color:'orange'}}>Why Mnemonica?</h1>
+
+<img src="./content/img/mnemonica_book.jpg" style={{width: '55vw'}} />
+
+</center>
+</Box>
+
+-----
+
+-----
+
+
+

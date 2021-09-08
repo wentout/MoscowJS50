@@ -1,0 +1,64 @@
+
+-----
+
+<h1 style={{fontSize:'15vh', color: 'orange'}}>Reactions</h1>
+
+<h1 className="borderline">3</h1>
+
+
+-----
+
+-----
+
+# Dima and Artem!
+
+
+<Box>
+<center>
+<a href="https://www.youtube.com/watch?v=T6Os27MKUCQ">
+<img src="./content/img/DimaArtem.png" style={{marginTop: '2vh', width: '71vw'}} />
+</a>
+</center>
+</Box>
+
+
+-----
+# Vsevolod...
+
+<Box>
+<center>
+<a href="https://www.youtube.com/watch?v=lXQTSXfGfbo">
+<img src="./content/img/Vsevolod.png" style={{marginTop: '2vh', width: '71vw'}} />
+</a>
+</center>
+</Box>
+
+-----
+# Dima!
+
+<Box>
+<center>
+<a href="https://www.youtube.com/watch?v=wXaoKroEnp4">
+<img src="./content/img/DimaOVR.png" style={{marginTop: '2vh', width: '71vw'}} />
+</a>
+</center>
+</Box>
+
+
+
+
+-----
+
+
+<Box sx={{marginTop: '10vh'}}>
+<center>
+
+# the team !
+
+<img src="./content/img/team.jpg" style={{width: '55vw'}} />
+
+</center>
+</Box>
+
+
+-----
