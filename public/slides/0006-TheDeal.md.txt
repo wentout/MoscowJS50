@@ -1,0 +1,299 @@
+
+<h1 style={{fontSize:'15vh', color: 'orange'}}>The Deal</h1>
+
+<h1 className="borderline">1</h1>
+
+-----
+
+
+<Box sx={{marginTop: '1vh'}}>
+<center>
+
+<h1 style={{fontSize: '7vh', color: 'green', marginTop:'3vh'}}>delegation is inheritance</h1>
+
+<a href="https://dl.acm.org/doi/abs/10.1145/38807.38820">
+<img src="./content/img/delegation_is_inheritance.png" style={{marginTop: '2vh', width: '71vw'}} />
+</a>
+
+
+</center>
+</Box>
+
+
+-----
+
+# From the beginner's Prototypes Example
+
+```javascript className=codehugeshift
+// back to the 1995
+var TheConstructor = function () {
+	this;
+	debugger;
+};
+
+var instance = new TheConstructor;
+// we can see constructor definition
+// made like this
+```
+
+<Button onClick={() => { fetch('http://localhost:3001/example/01_1995')}}>Run Me</Button>
+
+-----
+
+# From the beginner's Prototypes Example
+
+```javascript className=codehugenoshift
+var TheConstructor = function () { /* ... */ };
+
+var instance = new TheConstructor;
+
+var NextConstructor = function () { /* ... */ };
+
+// instance is Inherited !
+NextConstructor.prototype = instance;
+
+
+```
+
+-----
+
+<h1 style={{color: 'red'}}> However: this is An Instance, Type and Kind ! </h1>
+
+```javascript className=codehugenoshift
+var TheConstructor = function () { /* TYPE */ };
+
+var instance = new TheConstructor; // instance
+
+var NextConstructor = function () { /* KIND */ };
+
+// because instance is Inherited !
+NextConstructor.prototype = instance;
+
+
+```
+
+-----
+
+
+<Box sx={{marginTop: '1vh'}}>
+<center>
+
+<h1 style={{fontSize: '8vh', color: 'orange', marginTop:'3vh'}}>Kind as a Type Constructor</h1>
+
+<a href="https://en.wikipedia.org/wiki/Kind_(type_theory)">
+<img src="./content/img/Kind.png" style={{marginTop: '2vh', width: '71vw'}} />
+</a>
+
+
+</center>
+</Box>
+
+
+-----
+
+<h1 style={{color: 'orange'}}> However : we just made an Instance and Kind here ! </h1>
+
+```javascript className=codehugenoshift
+var TheConstructor = function () { /* TYPE */ };
+
+var instance = new TheConstructor; // instance
+
+var NextConstructor = function () { /* KIND */ };
+
+// because instance is Inherited !
+NextConstructor.prototype = instance;
+
+```
+
+-----
+
+<h1 style={{color: 'red'}}> The Factory of Constructors : Types and Kinds ! </h1>
+
+```javascript className=codehuge
+function Factory(previous) {
+    function MyKind({state}) {
+        this.state = state;
+    };
+    MyKind.prototype = previous;
+    return MyKind;
+};
+const MyKind = Factory({ state: 1 });
+const instance = new MyKind({ state: 2 });
+```
+
+<Button onClick={() => { fetch('http://localhost:3001/example/11_Factory')}}>Run Me</Button>
+
+-----
+
+# Singleton Wrapper
+
+```javascript className=codehugeshift
+
+const SingletonWrapper = function () { };
+
+SingletonWrapper.prototype =
+			Object.create( process ); // ← !
+
+SingletonWrapper.prototype
+	.constructor = SingletonWrapper;
+
+const instance = new SingletonWrapper;
+
+```
+
+<Button onClick={() => { fetch('http://localhost:3001/example/03_SingletonWrapper')}}>Run Me</Button>
+
+
+-----
+
+# Monotonic Wrapper → Class
+
+```javascript className=codehugeshift
+
+const MonotonicWrapper = function () { };
+
+MonotonicWrapper.prototype.someValue = 123;
+
+class MyClass extends MonotonicWrapper { };
+
+// reference MonotonicWrapper.prototype
+const instance1 = new MyClass;
+const instance2 = new MyClass;
+
+```
+
+<Button onClick={() => { fetch('http://localhost:3001/example/04_MonotonicWrapper')}}>Run Me</Button>
+
+-----
+
+# And now we have: Simple Class
+
+```javascript className=codehugeshift
+
+class TheClass {};
+
+debugger;
+
+const instance = new TheClass;
+
+debugger;
+
+```
+
+<Button onClick={() => { fetch('http://localhost:3001/example/02_01_SimpleClass')}}>Run Me</Button>
+
+-----
+
+# And now we have: Extended Class
+
+```javascript className=codehugeshift
+
+class BaseClass {};
+
+class TheClass extends BaseClass{};
+
+debugger;
+
+const instance = new TheClass;
+
+debugger;
+
+```
+
+<Button onClick={() => { fetch('http://localhost:3001/example/02_02_ExtendedClass')}}>Run Me</Button>
+
+
+-----
+
+# accordingly with the Timeline it is Just
+
+<div style={{marginLeft: '5vw'}}>
+
+<Box sx={{marginTop: '1vh'}}>
+<h1 style={{fontSize: '7vh', color: 'orange'}}>lifecycle of our Data <span style={{marginLeft: '1vw', foneSize: '8vh', color: 'green'}}> & C . O . D . E .</span> <span style={{marginLeft: '1vw', foneSize: '9vh', color: 'gray'}}>in Time</span></h1> 
+</Box>
+
+<br/>
+
+<div className="timelineText">
+
+
+# &mdash; <span style={{color:'gray'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'gray'}}>Line</span> &mdash; &mdash; <span style={{color:'gray'}}>&gt;</span>
+
+</div>
+
+
+<div className="timelineTextBlack">
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+# &mdash; <span style={{color:'black'}}>Time</span> &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; &mdash; <span style={{color:'gray'}}>|</span> &mdash; &mdash; <span style={{color:'black'}}>Line</span> &mdash; <span style={{color:'black'}}>&gt;</span>
+
+
+</div>
+
+<Chart id='chartAbs' opts={{
+	chart : {
+		type : 'tree',
+		chartData : {
+			name : 'Entry',
+			stroke: 'white',
+			children : [{
+				name: 'Leaf 1',
+				stroke: 'white',
+				children : [{
+					name: 'Leaf 1 . 1',
+					stroke: 'white',
+					children : [{
+						name: 'Leaf 1 . 1',
+						stroke: 'white'
+					}]
+				}, {
+					name: 'Leaf 1 . 2',
+					stroke: 'white',
+					children : [{
+						name: 'Leaf 1 . 2',
+						stroke: 'white',
+					}]
+				}],
+			}, {
+				name: 'Leaf 2',
+				stroke: 'white',
+				children : [{
+					name: 'Leaf 2 . 1',
+					stroke: 'white',
+				}, {
+					name: 'Leaf 2 . 2',
+					stroke: 'white',
+				}, {
+					name: 'Leaf 2 . 3',
+					stroke: 'white',
+				}],
+			}],
+		},
+		print : app.print,
+		dy : 15,
+		dx : 95,
+		width : 450,
+		margin : {
+			top: 15, right: 40, bottom: 10, left: 40
+		}
+	}
+}} />
+
+</div>
+
