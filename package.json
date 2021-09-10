@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf ./docs && PUBLIC_URL=/MoscowJS_50 react-scripts build && mv ./build ./docs",
+    "build": "rm -rf ./docs && PUBLIC_URL=/MoscowJS50 react-scripts build && mv ./build ./docs",
     "lint": "npx eslint --fix  ./src/",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/MoscowJS_50/static/css/main.15b18ae2.chunk.css",
-    "main.js": "/MoscowJS_50/static/js/main.ff516451.chunk.js",
-    "main.js.map": "/MoscowJS_50/static/js/main.ff516451.chunk.js.map",
-    "runtime-main.js": "/MoscowJS_50/static/js/runtime-main.e1e31918.js",
-    "runtime-main.js.map": "/MoscowJS_50/static/js/runtime-main.e1e31918.js.map",
-    "static/js/2.4d1abe31.chunk.js": "/MoscowJS_50/static/js/2.4d1abe31.chunk.js",
-    "static/js/2.4d1abe31.chunk.js.map": "/MoscowJS_50/static/js/2.4d1abe31.chunk.js.map",
-    "index.html": "/MoscowJS_50/index.html",
-    "static/css/main.15b18ae2.chunk.css.map": "/MoscowJS_50/static/css/main.15b18ae2.chunk.css.map",
-    "static/js/2.4d1abe31.chunk.js.LICENSE.txt": "/MoscowJS_50/static/js/2.4d1abe31.chunk.js.LICENSE.txt"
+    "main.css": "/MoscowJS50/static/css/main.15b18ae2.chunk.css",
+    "main.js": "/MoscowJS50/static/js/main.ff516451.chunk.js",
+    "main.js.map": "/MoscowJS50/static/js/main.ff516451.chunk.js.map",
+    "runtime-main.js": "/MoscowJS50/static/js/runtime-main.a7744da6.js",
+    "runtime-main.js.map": "/MoscowJS50/static/js/runtime-main.a7744da6.js.map",
+    "static/js/2.17016886.chunk.js": "/MoscowJS50/static/js/2.17016886.chunk.js",
+    "static/js/2.17016886.chunk.js.map": "/MoscowJS50/static/js/2.17016886.chunk.js.map",
+    "index.html": "/MoscowJS50/index.html",
+    "static/css/main.15b18ae2.chunk.css.map": "/MoscowJS50/static/css/main.15b18ae2.chunk.css.map",
+    "static/js/2.17016886.chunk.js.LICENSE.txt": "/MoscowJS50/static/js/2.17016886.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e1e31918.js",
-    "static/js/2.4d1abe31.chunk.js",
+    "static/js/runtime-main.a7744da6.js",
+    "static/js/2.17016886.chunk.js",
     "static/css/main.15b18ae2.chunk.css",
     "static/js/main.ff516451.chunk.js"
   ]
