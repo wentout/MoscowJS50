@@ -204,7 +204,7 @@ Objects → Proxy(Objects)    // → Proxy
 
 <Box sx={{marginTop: '25vh'}}>
 <center>
-<h1 style={{fontSize: '17vh', color: 'cyan'}}>The Final Example</h1>
+<h1 style={{fontSize: '14vh', color: 'cyan'}}>Stolen Property</h1>
 </center>
 </Box>
 

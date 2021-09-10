@@ -307,13 +307,6 @@
 </center>
 </Box>
 
-CF is a constructor (and also an object). Five objects have been created by using new expressions: cf1, cf2, cf3, cf4, and cf5. Each of these objects contains properties named "q1" and "q2". The dashed lines represent the implicit prototype relationship; so, for example, cf3's prototype is CFp. The constructor, CF, has two properties itself, named "P1" and "P2", which are not visible to CFp, cf1, cf2, cf3, cf4, or cf5. The property named "CFP1" in CFp is shawhite by cf1, cf2, cf3, cf4, and cf5 (but not by CF), as are any properties found in CFp's implicit prototype chain that are not named "q1", "q2", or "CFP1". Notice that there is no implicit prototype link between CF and CFp.
-
-Unlike most class-based object languages, properties can be added to objects dynamically by assigning values to them. That is, constructors are not requiwhite to name or assign values to all or any of the constructed object's properties. In the above diagram, one could add a new shawhite property for cf1, cf2, cf3, cf4, and cf5 by assigning a new value to the property in CFp.
-
-
-
-
 
 -----
 
@@ -336,10 +329,6 @@ Unlike most class-based object languages, properties can be added to objects dyn
 </a>
 </center>
 </Box>
-
-CF is a constructor (and also an object). Five objects have been created by using new expressions: cf1, cf2, cf3, cf4, and cf5. Each of these objects contains properties named "q1" and "q2". The dashed lines represent the implicit prototype relationship; so, for example, cf3's prototype is CFp. The constructor, CF, has two properties itself, named "P1" and "P2", which are not visible to CFp, cf1, cf2, cf3, cf4, or cf5. The property named "CFP1" in CFp is shawhite by cf1, cf2, cf3, cf4, and cf5 (but not by CF), as are any properties found in CFp's implicit prototype chain that are not named "q1", "q2", or "CFP1". Notice that there is no implicit prototype link between CF and CFp.
-
-Unlike most class-based object languages, properties can be added to objects dynamically by assigning values to them. That is, constructors are not requiwhite to name or assign values to all or any of the constructed object's properties. In the above diagram, one could add a new shawhite property for cf1, cf2, cf3, cf4, and cf5 by assigning a new value to the property in CFp.
 
 
 -----

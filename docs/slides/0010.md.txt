@@ -38,7 +38,7 @@
 
 <br/>
 
-# [this talk with all examples](https://wentout.github.io/MoscowJS_50/)
+# [this talk with all examples](https://wentout.github.io/MoscowJS50/)
 
 <br/>
 
@@ -57,6 +57,12 @@
 
 -----
 
+
+<Box sx={{textAlign: 'center'}}>
+<a href="https://wentout.github.io/MoscowJS50/">
+<img src="./content/qrcode_wentout.github.io.png" style={{marginTop: '2vh', width: '49vw'}} />
+</a>
+</Box>
 
 -----
 
