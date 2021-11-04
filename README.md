@@ -1,4 +1,4 @@
-# slides for "Strict Types in JavaScript" talk
+# slides for "The Magic of Prototype Inheritance" talk
 
 Made on mythographica's [presentations framework](https://github.com/mythographica/slider)
 
